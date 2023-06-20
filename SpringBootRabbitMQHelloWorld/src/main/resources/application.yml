@@ -1,0 +1,18 @@
+server:
+    port: 8080
+
+javainuse:
+    rabbitmq:
+        dead-letter:
+            dead-letter-exchange: deadLetterExchange
+            dead-letter-queue: deadLetterQueue
+            dead-letter-routingKey: deadLetter
+            dead-letter-exchange-header: x-dead-letter-exchange
+            dead-letter-routingKey-header: x-dead-letter-routing-key
+        exchange: javainuse-direct-exchange
+        queue: javainuse.queue
+        routingkey: javainuse
+        uri: amqps://b-a7ee691c-683a-40bf-9800-4cce4335d404.mq.us-east-1.amazonaws.com:5671
+        username: pvanluom
+        password: XtQBX8C6q^px1
+        virtual-host: /
